@@ -1,3 +1,6 @@
+2023-06-12
+* removed ecps
+* changed design back to original
 2023-05-09
 * added vocabulary in pdm and battle royale
 2023-05-04
