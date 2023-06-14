@@ -1770,7 +1770,8 @@
             float: right;
             vertical-align: middle;
             width: 241px;
-            box-sizing: border-box
+            box-sizing: border-box;
+            border-radius: 30px;
         }
 
         #mappreview {
@@ -1816,7 +1817,8 @@
             background: hsl(200, 60%, 15%);
             border: 1px solid hsl(200, 60%, 10%);
             height: 30px;
-            line-height: 30px
+            line-height: 30px;
+            border-radius: 30px;
         }
 
         .modal .modalbody .range input {
@@ -30156,7 +30158,7 @@
             l,
             n;
             return s = document.querySelector(".modal"),
-            "block" === s.style.display ? "infos" === this.lastModal ? this.closeModal() : this.closeModal(this.showInfos) : (document.querySelector(".modal .modaltitle").innerHTML = t("INFO"), l = document.querySelector(".modal .modalbody"), n = document.getElementById("gameinfos").innerHTML.replace("\n", "").replace(/\n/g, "<br>"), l.innerHTML = "<div class='infos'>" + n + "</div>", i = document.querySelector(".modal .modalbody #infologo"), e = new Image, e.src = "https://static.wixstatic.com/media/475917_3b176e35461e400ea0149ec9701169b5~mv2.png/v1/fill/w_286,h_160,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Transparent%20Yellow.png", i.appendChild(e), this.showModal("infos"))
+            "block" === s.style.display ? "infos" === this.lastModal ? this.closeModal() : this.closeModal(this.showInfos) : (document.querySelector(".modal .modaltitle").innerHTML = t("INFO"), l = document.querySelector(".modal .modalbody"), n = document.getElementById("gameinfos").innerHTML.replace("\n", "").replace(/\n/g, "<br>"), l.innerHTML = "<div class='infos'>" + n + "</div>", i = document.querySelector(".modal .modalbody #infologo"), e = new Image, e.src = "https://starblast.data.neuronality.com/img/starblast_io_logo.svg", i.appendChild(e), this.showModal("infos"))
         },
         e.prototype.showError = function (e) {
             var i,
