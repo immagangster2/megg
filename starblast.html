@@ -21843,6 +21843,7 @@
             i.IIl0l.constructor.call(this, "survival", "Survival Mode"),
             this.max_enter_time = 1800,
             this.radar_zoom = 4,
+            this.soundtrack = "procedurality.mp3",
             this.max_enter_players = 50,
             this.vocabulary = [{
                     text: "Hello",
@@ -32333,10 +32334,6 @@
                 return (16 * Math.random() | 0).toString(16)
             }),
             this.IlOO1(t)
-        },
-        t.prototype.IlOO1 = function (t) {
-            if (t !== this.key)
-                return this.key = t, null != this.key && this.key.length > 11 && (this.key = this.key.substring(this.key.length - 11, this.key.length)), this.verified = "no", localStorage.setItem("ECPKey", this.key), localStorage.setItem("ECPVerified", "no")
         },
         t.prototype.lOIII = function (t) {
             return /([0-9a-f]{5})-([0-9a-f]{5})/.test(t)
