@@ -23963,14 +23963,16 @@
               );
             }),
             t.prototype.buildDefaultMaterial = function (t) {
-                return null == t && (t = 10),
-                this.material = new THREE.MeshLambertMaterial({
-                    map: Oll1I,
-                    color: 16777215,
-                    emissive: IlO0l.hsvToRgbHex(this.hue, .5, 1),
-                    emissiveMap: l1IOO
-                })
-            },
+              return (
+                null == t && (t = 10),
+                (this.material = new THREE.MeshLambertMaterial({
+                  map: llI1O,
+                  color: 16777215,
+                  emissive: OlIIO.hsvToRgbHex(this.hue, 0.5, 1),
+                  emissiveMap: I110l,
+                }))
+              );
+            },,
             t.prototype.buildX27Material = function () {
                 return this.material = new THREE.MeshPhongMaterial({
                     map: Oll1I,
@@ -29297,13 +29299,15 @@
               );
             }),
             t.prototype.buildDefaultMaterial = function (t) {
-                return null == t && (t = 10),
-                this.material = new THREE.MeshLambertMaterial({
-                    map: Oll1I,
-                    color: 16777215,
-                    emissive: IlO0l.hsvToRgbHex(this.hue, .5, 1),
-                    emissiveMap: l1IOO
-                })
+              return (
+                null == t && (t = 10),
+                (this.material = new THREE.MeshLambertMaterial({
+                  map: llI1O,
+                  color: 16777215,
+                  emissive: OlIIO.hsvToRgbHex(this.hue, 0.5, 1),
+                  emissiveMap: I110l,
+                }))
+              );
             },
             t.prototype.buildX27Material = function () {
                 return this.material = new THREE.MeshPhongMaterial({
