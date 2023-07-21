@@ -2380,7 +2380,7 @@
                 <div id="respawn_actions">
                     <button id="continue_btn" data-translate="Continue">Continue</button>
                     <button id="respawn_btn" data-translate="Respawn">Respawn</button>
-                    <button id="refresh_btn"><span data-translate="Quit">Quit</span> (<span id="menucountdown"></span>)</button>
+                    <button id="refresh_btn"><span data-translate="Quit">Quit</button>
                 </div>
             </div>
             <div class="nY8o9">
@@ -31011,17 +31011,6 @@
                 }
             }
                 (this), this.OOlOI.IOI01.lI1lO() ? 10 : 2e3)
-        },
-        e.prototype.countdown = function () {
-            var t;
-            return t = document.querySelector("#menucountdown"),
-            t.innerHTML = --this.timeout,
-            this.III11 = setTimeout(function (t) {
-                return function () {
-                    return 0 === t.timeout ? (window.onbeforeunload = null, t.reloadGame()) : t.countdown()
-                }
-            }
-                    (this), 1e3)
         },
         e.prototype.clearAds = function () {
             var t,
