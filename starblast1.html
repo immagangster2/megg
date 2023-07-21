@@ -680,21 +680,16 @@
         .followtools a.gold:visited,
         #donate_mobile {
             text-shadow: 0 0 7px hsla(20, 100%, 80%, 1);
-            background: linear-gradient(to top left, #ff0000, #00ff00, #ff0000 200%, #00ff00 200%);
+            background: linear-gradient(to top left, #ff0000, #00ff00);
             box-shadow: 0 0 15px #00ff00;   
             color: #fff;
             transition: .5s ease;
         }
 
-        .followtools a i {
-            font-size: 1.5em;
-            vertical-align: middle
-        }
-
         .followtools a.gold:hover {
-            background: linear-gradient(to top left, #ff0000, #00ff00);
-            color: #FFF;
+            background: linear-gradient(to top left, #00ff00, #ff0000);
             box-shadow: 0 0 25px #00ff00;
+            color: #FFF;
             transform: scale(1.25);
             transition: .5s ease;
         }
@@ -705,6 +700,11 @@
             color: #FFF;
             transform: scale(1.25);
             transition: .5s ease;
+        }
+
+        .followtools a i {
+            font-size: 1.5em;
+            vertical-align: middle
         }
 
         .followtools span {
@@ -938,7 +938,7 @@
             background: linear-gradient(to top left, #ff0000, #00ff00);
             box-shadow: 0 0 15px #00ff00;
             text-shadow: 0 0 7px hsla(200, 100%, 80%, 1);
-            color: hsla(200, 100%, 90%, .8);
+            color: white;
             font-family: Play, Verdana;
             border: 0;
             border-radius: 10px;
@@ -950,7 +950,7 @@
         .donate-btn:hover,
         .ecpbtn:hover {
             background: linear-gradient(to top left, #00ff00, #ff0000);
-            box-shadow: 0 0 8px hsla(200, 100%, 90%, 1);
+            box-shadow: 0 0 25px #00ff00;
             color: #FFF;
             transform: scale(1.10);
             transition: .5s ease;
@@ -993,14 +993,14 @@
 
         #play.orange {
             color: #FFF;
-            background: radial-gradient(ellipse at center, hsla(20, 50%, 0%, 1) 0, hsla(200, 100%, 70%, .5) 150%);
+            background: linear-gradient(to top left, #ff0000, #00ff00);
             text-shadow: 0 0 7px hsla(200, 100%, 80%, 1);
-            box-shadow: 0 0 6px hsla(200, 100%, 80%, 1)
+            box-shadow: 0 0 15px #00ff00;
         }
 
         #play.orange:hover {
-            background: radial-gradient(ellipse at center, hsla(20, 50%, 0%, 1) 0, hsla(200, 100%, 70%, .5) 100%);
-            box-shadow: 0 0 8px hsla(200, 100%, 90%, 1)
+            background: linear-gradient(to top left, #00ff00, #ff0000);
+            box-shadow: 0 0 25px #00ff00;
         }
 
         #play #game_modes {
@@ -1984,9 +1984,7 @@
 
         .frozenbg,
         .frozenbg:visited {
-            background: radial-gradient(ellipse at center, hsla(200, 50%, 0%, 1) 20%, hsla(200, 50%, 60%, .5) 150%);
-            box-shadow: 0 0 6px hsla(200, 100%, 80%, 1);
-            text-shadow: 0 0 7px hsla(200, 100%, 80%, 1);
+            background: #00000040;
             color: hsla(200, 100%, 90%, .8);
             border-radius: 30px;
         }
@@ -11146,6 +11144,8 @@
                     for (O = document.getElementsByClassName("followtools"), l = 0, r = O.length; l < r; l++)
                         t = O[l], t.style.display = "none";
                     for (I = document.getElementsByClassName("changelog-new"), m = [], u = 0, h = I.length; u < h; u++)
+                        t = I[u], m.push(t.style.display = "none");
+                    for (I = document.getElementsByClassName("changelog-sb"), m = [], u = 0, h = I.length; u < h; u++)
                         t = I[u], m.push(t.style.display = "none");
                     return m
                 }
