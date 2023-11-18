@@ -1904,22 +1904,18 @@ input[type=range]:focus::-ms-fill-upper{background:hsl(200,60%,55%)}.github-fork
         this.l01OO();
     }
     this.lllI1 = true;
-}, t.prototype.resize = function() {
+			}, t.prototype.resize = function() {
 				return this.width = window.innerWidth, this.height = window.innerHeight, this.rotated = !1, this.width < this.height && (this.rotated = !0), this.welcome || (this.I0O0l.is_mobile_app ? this.width = Math.round(Math.min(18 * this.height / 9, this.width)) : this.width = Math.round(Math.min(16 * this.height / 9, this.width))), this.IlO10.setSize(this.width, this.height), this.screen.setSize(this.width, this.height, this.I1O11), this.fixed = !1
 			}, t.prototype.fixSize = function() {
 				var t, e, i, s, l, n;
 				if (i = this.IlO10.context, e = this.IlO10.domElement, null != i && null != e) return this.fixed = !0, s = window.devicePixelRatio || 1, t = i.webkitBackingStorePixelRatio || i.mozBackingStorePixelRatio || i.msBackingStorePixelRatio || i.oBackingStorePixelRatio || i.backingStorePixelRatio || 1, this.I1O11 = s / t / this.l1llI, 1 !== this.I1O11 && (n = this.width, l = this.height, this.width = Math.round(this.I1O11 * this.width), this.height = Math.round(this.I1O11 * this.height), this.IlO10.setSize(this.width, this.height), this.screen.setSize(this.width, this.height, this.I1O11), e.style.width = Math.round(n) + "px", e.style.height = Math.round(l) + "px", this.pixelated) ? e.style["image-rendering"] = "pixelated" : void 0
-			}, t.prototype.kill = function(imageToRemove, removeCanvasWrapper) {
-    if (null == imageToRemove) {
-        imageToRemove = this.IlO10.domElement;
+			}, t.prototype.kill = function(t) {
+    if (null == t && (t = !0), this.killed = !0, t) {
+        var imageElement = this.IlO10.domElement;
+        if (imageElement.parentNode) {
+            imageElement.parentNode.removeChild(imageElement);
+        }
     }
-
-    if (removeCanvasWrapper) {
-        var canvasWrapper = document.getElementById("canvaswrapper");
-        canvasWrapper.removeChild(imageToRemove);
-    }
-
-    this.killed = true;
 }, t.prototype.showCapture = function(t, e) {
 				var i, s, l, n, a;
 				return null == e && (e = .7), i = document.createElement("canvas"), i.width = t.width / 5.1, i.height = t.height / 5.1 * 1.2, l = i.getContext("2d"), n = l.createLinearGradient(0, 0, i.width, i.height), n.addColorStop(0, "#FFF"), n.addColorStop(1, "#CCC"), l.fillStyle = n, l.fillRect(0, 0, i.width, i.height), a = .95 * i.width / t.width, l.drawImage(t, .025 * i.width, .025 * i.width, t.width * a, t.height * a), s = new OlO1I(i), this.screen.l0OI0.add(s, [.025, e, .2, .25]), s.I00ll.init({
